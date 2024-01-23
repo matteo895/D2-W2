@@ -1,35 +1,59 @@
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
-
-const trovaNumeroMaggiore = (num1, num2) => num1 > num2;
-const numeroMaggiore = trovaNumeroMaggiore(5, 10);
-console.log("il numero maggiore è: " + 10);
+const numeroGrande1 = 1;
+const numeroGrande2 = 2;
+if (numeroGrande1 > numeroGrande2) {
+  console.log("numb1 è più grande di numero2 ");
+} else {
+  console.log("il secondo numero è più grande del primo");
+}
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-let verificaNonugualeA5 = (numero) => {
-  if (numero !== 5) {
-    console.log(numero + "is not equal to 5");
-  }
-};
-verificaNonugualeA5(7);
+const numeroDiverso = 7;
+if (numeroDiverso !== 5) {
+  console.log("not equal");
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
+const numeroDivisibile = 30;
+if (numeroDivisibile % 5 === 0) console.log(" è divisibile per 5");
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
+let num1 = 12;
+let num2 = 20;
+if (
+  num1 === 8 ||
+  num2 === 8 ||
+  num1 + num2 === 8 ||
+  num1 - num2 === 8 ||
+  num2 - num1 === 8
+) {
+  console.log("una delle operazioni si è verificata");
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
+
+let totalShoppingCart = 40;
+let spedizioneCosto = 10;
+if (totalShoppingCart > 50) {
+  shippinghcost = 0;
+  spedizionegratuita = totalShoppingCart + shippinghcost;
+  console.log("hai diritto alla spedizione gratuita");
+} else {
+  console.log("non hai diritto alla spedizione");
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
